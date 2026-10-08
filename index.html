@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chander Infra | Infrastructure. Materials. Solutions.</title>
+<meta name="description" content="Chander Infra — construction materials, precast products, infrastructure products, site infrastructure, equipment rentals, outdoor landscaping and memorial infrastructure. Call 9030601270.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+ --ink:#132238; --muted:#607089; --paper:#f7f9fc; --white:#fff;
+ --orange:#ff6b2c; --yellow:#ffc928; --blue:#2167ff; --cyan:#16b8c4;
+ --green:#19a974; --purple:#7b4dff; --pink:#ef4f9b; --red:#ef4444;
+ --shadow:0 18px 55px rgba(22,37,62,.11); --radius:24px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+.topbar{background:#132238;color:#fff;font-size:13px;padding:9px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:20px}
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid #e8edf4}
+.navin{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:11px;font-family:Manrope;font-weight:900;font-size:22px;letter-spacing:-.7px}
+.logo-mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--orange),var(--yellow));display:grid;place-items:center;color:#132238;font-weight:900;box-shadow:0 8px 20px #ff6b2c35}
+.navlinks{display:flex;gap:23px;font-size:14px;font-weight:700;color:#40516a}
+.navlinks a:hover{color:var(--orange)}
+.navcta{background:var(--orange);color:#fff!important;padding:11px 17px;border-radius:999px}
+.hero{padding:72px 0 65px;overflow:hidden;background:
+ radial-gradient(circle at 10% 10%,#ffc92845,transparent 27%),
+ radial-gradient(circle at 90% 20%,#2167ff28,transparent 28%),
+ linear-gradient(135deg,#fff8ef,#f4f8ff)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:999px;background:#fff;border:1px solid #e6ebf3;color:var(--orange);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px;box-shadow:0 8px 25px #1322380b}
+h1{font-family:Manrope;font-size:clamp(43px,6vw,76px);line-height:.98;letter-spacing:-3.5px;margin:20px 0}
+.grad{background:linear-gradient(90deg,var(--orange),var(--pink),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:18px;color:var(--muted);max-width:650px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 20px;border-radius:14px;font-weight:800;border:2px solid transparent}
+.btn-primary{background:var(--ink);color:#fff}
+.btn-orange{background:var(--orange);color:#fff}
+.btn-light{background:#fff;border-color:#dfe6ef}
+.hero-img{height:470px;border-radius:34px;overflow:hidden;position:relative;box-shadow:var(--shadow);background:#ddd}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-badge{position:absolute;left:20px;bottom:20px;background:#fff;border-radius:18px;padding:16px 18px;box-shadow:var(--shadow);font-weight:800}
+.hero-badge span{display:block;color:var(--orange);font-size:25px}
+.section{padding:78px 0}
+.section-head{text-align:center;max-width:780px;margin:0 auto 38px}
+.kicker{color:var(--orange);font-weight:900;text-transform:uppercase;letter-spacing:1.4px;font-size:12px}
+h2{font-family:Manrope;font-size:clamp(32px,4vw,50px);letter-spacing:-2px;line-height:1.05;margin:9px 0 13px}
+.section-head p{color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-15px;position:relative;z-index:3}
+.stat{background:#fff;border-radius:20px;padding:22px;box-shadow:var(--shadow);text-align:center}
+.stat b{font-size:27px;font-family:Manrope;display:block}
+.stat span{font-size:12px;color:var(--muted);font-weight:700}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid #e7edf5;border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 35px rgba(25,43,70,.06);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.card-img{height:220px;overflow:hidden;position:relative}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.card:hover img{transform:scale(1.05)}
+.tag{position:absolute;top:14px;left:14px;background:#fff;color:var(--ink);padding:7px 10px;border-radius:999px;font-size:11px;font-weight:900}
+.card-body{padding:21px}
+.card h3{font-family:Manrope;font-size:22px;margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted);margin-bottom:14px}
+.list{display:flex;flex-wrap:wrap;gap:7px}
+.chip{font-size:11px;font-weight:800;background:#f2f5f9;border-radius:999px;padding:6px 9px;color:#43536b}
+.service{padding-top:0}
+.service-band{border-radius:32px;padding:40px;color:#fff;overflow:hidden;position:relative}
+.service-band:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,#132238ee,#2167ffdd);z-index:0}
+.service-band>*{position:relative;z-index:1}
+.service-band .products{margin-top:25px}
+.service-band .card{background:#ffffff0e;border-color:#ffffff26;color:#fff;box-shadow:none}
+.service-band .card p,.service-band .chip{color:#e6edf8}
+.service-band .chip{background:#ffffff15}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.step{padding:25px;background:#fff;border-radius:22px;border-top:5px solid var(--orange);box-shadow:0 10px 30px #1322380a}
+.step:nth-child(2){border-color:var(--blue)}.step:nth-child(3){border-color:var(--green)}.step:nth-child(4){border-color:var(--purple)}
+.step b{font-size:30px;font-family:Manrope}
+.step h3{margin:7px 0}
+.step p{font-size:13px;color:var(--muted)}
+.cta{padding:70px 0}
+.ctabox{border-radius:32px;padding:55px;display:flex;justify-content:space-between;align-items:center;gap:30px;background:linear-gradient(120deg,var(--orange),var(--pink));color:#fff;box-shadow:var(--shadow)}
+.ctabox h2{margin:0 0 10px}
+.ctabox p{max-width:650px;opacity:.92}
+.ctabox .btn{background:#fff;color:var(--ink)}
+footer{background:#101c2e;color:#b7c3d5;padding:42px 0 30px}
+.footgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:35px}
+footer h3{color:#fff;margin-bottom:12px}
+footer a:hover{color:#fff}
+.copy{border-top:1px solid #ffffff14;margin-top:28px;padding-top:20px;font-size:12px;display:flex;justify-content:space-between}
+.float{position:fixed;right:20px;bottom:20px;z-index:30;background:#20c76a;color:#fff;padding:14px 18px;border-radius:999px;font-weight:900;box-shadow:0 14px 35px #20c76a55}
+@media(max-width:900px){
+ .hero-grid{grid-template-columns:1fr}.hero-img{height:370px}.products{grid-template-columns:repeat(2,1fr)}
+ .stats{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:repeat(2,1fr)}
+ .navlinks{display:none}.cta{padding:45px 0}.ctabox{padding:35px;flex-direction:column;align-items:flex-start}
+}
+@media(max-width:600px){
+ .topbar .container{justify-content:center}.topbar span:first-child{display:none}
+ .hero{padding:45px 0}.hero-img{height:300px}h1{letter-spacing:-2px}
+ .products{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr}
+ .section{padding:58px 0}.card-img{height:210px}.navin{height:68px}
+ .logo{font-size:19px}.logo-mark{width:37px;height:37px}
+ .float{right:12px;bottom:12px}.copy{flex-direction:column;gap:7px}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>Hyderabad • Supply • Rental • Installation</span><span>Call / WhatsApp: <strong>9030601270</strong></span></div></div>
+
+<header class="nav">
+ <div class="container navin">
+  <a class="logo" href="#"><span class="logo-mark">CI</span> CHANDER INFRA</a>
+  <nav class="navlinks">
+   <a href="#materials">Materials</a><a href="#precast">Precast</a><a href="#infra">Infrastructure</a><a href="#rentals">Rentals</a><a href="#outdoor">Outdoor</a><a href="#memorial">Memorial</a>
+   <a class="navcta" href="tel:9030601270">Call 9030601270</a>
+  </nav>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="container hero-grid">
+  <div>
+   <span class="eyebrow">Infrastructure • Materials • Solutions</span>
+   <h1>Build bigger.<br><span class="grad">Build smarter.</span></h1>
+   <p>Chander Infra brings construction materials, precast products, site infrastructure, rentals, outdoor products and memorial & community solutions together under one roof.</p>
+   <div class="actions">
+    <a class="btn btn-orange" href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20a%20quotation.">💬 WhatsApp Us</a>
+    <a class="btn btn-primary" href="tel:9030601270">☎ Get a Quote</a>
+    <a class="btn btn-light" href="#products">Explore Products ↓</a>
+   </div>
+  </div>
+  <div class="hero-img">
+   <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=85" alt="Modern construction site">
+   <div class="hero-badge"><span>6+</span> complete product divisions</div>
+  </div>
+ </div>
+</section>
+
+<div class="container stats">
+ <div class="stat"><b>06</b><span>Business Divisions</span></div>
+ <div class="stat"><b>40+</b><span>Product Categories</span></div>
+ <div class="stat"><b>1</b><span>Single Supplier</span></div>
+ <div class="stat"><b>24/7</b><span>Enquiry Access</span></div>
+</div>
+
+<section class="section" id="products">
+ <div class="container">
+  <div class="section-head"><div class="kicker">What we supply</div><h2>Everything your project needs.</h2><p>From the foundation and boundary wall to outdoor spaces, temporary infrastructure and community requirements.</p></div>
+  <div class="products">
+   <article class="card" id="materials"><div class="card-img"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=85" alt="Construction materials"><span class="tag">01 • MATERIALS</span></div><div class="card-body"><h3>Construction Materials</h3><p>Core materials for residential, commercial, industrial and civil projects.</p><div class="list"><span class="chip">Cement</span><span class="chip">Steel</span><span class="chip">Sand</span><span class="chip">Aggregates</span><span class="chip">Blocks</span></div></div></article>
+   <article class="card" id="precast"><div class="card-img"><img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=85" alt="Precast concrete construction"><span class="tag">02 • PRECAST</span></div><div class="card-body"><h3>Precast Products</h3><p>Ready-to-install concrete products designed for speed, consistency and durability.</p><div class="list"><span class="chip">Compound Walls</span><span class="chip">Pavers</span><span class="chip">Kerbs</span><span class="chip">Drains</span><span class="chip">Manholes</span></div></div></article>
+   <article class="card" id="infra"><div class="card-img"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=85" alt="Infrastructure products"><span class="tag">03 • INFRA</span></div><div class="card-body"><h3>Infrastructure Products</h3><p>Practical infrastructure elements for sites, roads, communities and public spaces.</p><div class="list"><span class="chip">RCC Poles</span><span class="chip">Barriers</span><span class="chip">Benches</span><span class="chip">Tree Guards</span></div></div></article>
+   <article class="card" id="site"><div class="card-img"><img src="https://images.unsplash.com/photo-1590644365607-1c5a2e7b4a0d?auto=format&fit=crop&w=900&q=85" alt="Temporary site infrastructure"><span class="tag">04 • SITE</span></div><div class="card-body"><h3>Site Infrastructure</h3><p>Flexible infrastructure for construction sites, projects, events and temporary facilities.</p><div class="list"><span class="chip">Cabins</span><span class="chip">Fencing</span><span class="chip">Temporary Structures</span></div></div></article>
+   <article class="card" id="rentals"><div class="card-img"><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=85" alt="Event equipment rental"><span class="tag">05 • RENTALS</span></div><div class="card-body"><h3>Equipment Rentals</h3><p>Event and site equipment available for short-term and project-based requirements.</p><div class="list"><span class="chip">Chairs</span><span class="chip">Tables</span><span class="chip">Tents</span><span class="chip">Stages</span><span class="chip">Barricades</span></div></div></article>
+   <article class="card" id="outdoor"><div class="card-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=85" alt="Outdoor landscaping"><span class="tag">06 • OUTDOOR</span></div><div class="card-body"><h3>Outdoor & Landscape</h3><p>Products that make open spaces functional, durable and visually appealing.</p><div class="list"><span class="chip">Pavers</span><span class="chip">Planters</span><span class="chip">Benches</span><span class="chip">Bollards</span></div></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="section service" id="memorial">
+ <div class="container">
+  <div class="service-band">
+   <div class="kicker" style="color:#ffc928">06 • Memorial & Community</div>
+   <h2>Thoughtful infrastructure for meaningful spaces.</h2>
+   <p style="max-width:700px;color:#e9eff8">We can support memorial, condolence, community and public-space requirements with durable, practical infrastructure and coordinated supply.</p>
+   <div class="products">
+    <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=800&q=85" alt="Memorial stone"><span class="tag">MEMORIALS</span></div><div class="card-body"><h3>Memorials</h3><p>Custom memorial structures and dedicated spaces.</p></div></article>
+    <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=85" alt="Memorial plaque"><span class="tag">PLAQUES</span></div><div class="card-body"><h3>Plaques</h3><p>Memorial and recognition plaques for institutions and communities.</p></div></article>
+    <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1598301257982-0cf014dabbcd?auto=format&fit=crop&w=800&q=85" alt="Outdoor seating"><span class="tag">COMMUNITY</span></div><div class="card-body"><h3>Seating & Shelters</h3><p>Benches, seating areas, waiting shelters and practical community infrastructure.</p></div></article>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="section-head"><div class="kicker">Simple process</div><h2>One call. One coordinated solution.</h2><p>Tell us what you need; we coordinate supply, delivery and installation requirements.</p></div>
+  <div class="process">
+   <div class="step"><b>01</b><h3>Tell us</h3><p>Share your project, quantity, location and timeline.</p></div>
+   <div class="step"><b>02</b><h3>Get a quote</h3><p>We prepare a practical product and quantity-based quotation.</p></div>
+   <div class="step"><b>03</b><h3>Supply</h3><p>Products are coordinated for pickup or delivery to your site.</p></div>
+   <div class="step"><b>04</b><h3>Install</h3><p>Where applicable, installation and site coordination can be arranged.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container">
+  <div class="ctabox">
+   <div><h2>Have a project in mind?</h2><p>Construction materials, precast products, infrastructure, rentals, outdoor products or community requirements — let's discuss your quantity and location.</p></div>
+   <div class="actions" style="margin:0"><a class="btn" href="tel:9030601270">☎ 9030601270</a><a class="btn" href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20please%20share%20a%20quotation.">WhatsApp Quote</a></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footgrid">
+   <div><h3>CHANDER INFRA</h3><p>Infrastructure. Materials. Solutions.</p><p style="margin-top:10px">A practical supply and solutions partner for construction, infrastructure, sites, events, outdoor spaces and community projects.</p></div>
+   <div><h3>Divisions</h3><p><a href="#materials">Construction Materials</a></p><p><a href="#precast">Precast Products</a></p><p><a href="#infra">Infrastructure Products</a></p><p><a href="#rentals">Equipment Rentals</a></p></div>
+   <div><h3>Contact</h3><p>📞 <a href="tel:9030601270">9030601270</a></p><p>💬 <a href="https://wa.me/919030601270">WhatsApp</a></p><p style="margin-top:8px">Serving Hyderabad & project requirements across Telangana.</p></div>
+  </div>
+  <div class="copy"><span>© 2026 Chander Infra. All rights reserved.</span><span>Built for GitHub Pages</span></div>
+ </div>
+</footer>
+<a class="float" href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20a%20quotation.">💬 WhatsApp</a>
+</body>
+</html>
