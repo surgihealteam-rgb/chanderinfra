@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chander Infra | Build • Supply • Rent • Install</title>
+<meta name="description" content="Chander Infra — construction materials, precast, infrastructure products, site infrastructure, equipment rentals, outdoor landscaping and memorial/community infrastructure. 9030601270.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#122238;--muted:#627087;--paper:#f7f9fc;--orange:#ff6b2c;--blue:#2167ff;--white:#fff;--line:#e5eaf1}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial;color:var(--ink);background:var(--paper);line-height:1.5}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
+.top{background:#102038;color:white;padding:9px 0;font-size:13px}.top .container{display:flex;justify-content:space-between}
+nav{position:sticky;top:0;z-index:50;background:#ffffffee;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navin{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:10px;align-items:center;font-weight:900;font-family:Manrope;font-size:21px}
+.logo{width:43px;height:43px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,#ff6b2c,#ffc928);color:#102038}
+.links{display:flex;gap:18px;font-size:13px;font-weight:800;color:#46556b}.links a:hover{color:var(--orange)}
+.call{background:var(--orange);color:white!important;padding:11px 16px;border-radius:999px}
+.hero{padding:76px 0;background:radial-gradient(circle at 10% 20%,#ffc92840,transparent 30%),radial-gradient(circle at 90% 15%,#2167ff2d,transparent 32%),linear-gradient(135deg,#fff8ee,#f1f6ff)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.eyebrow{font-size:12px;font-weight:900;letter-spacing:1.5px;color:var(--orange);text-transform:uppercase}
+h1{font:900 clamp(45px,6vw,78px)/.97 Manrope;margin:16px 0;letter-spacing:-3px}.gradient{background:linear-gradient(90deg,#ff6b2c,#ef4f9b,#2167ff);color:transparent;background-clip:text;-webkit-background-clip:text}
+.hero p{font-size:18px;color:var(--muted);max-width:620px}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:27px}
+.btn{padding:14px 19px;border-radius:14px;font-weight:900;display:inline-block}.primary{background:var(--orange);color:#fff}.dark{background:var(--ink);color:#fff}.white{background:#fff;border:1px solid var(--line)}
+.hero-img{height:480px;border-radius:34px;overflow:hidden;box-shadow:0 25px 70px #1322381c}.hero-img img{width:100%;height:100%;object-fit:cover}
+.intro{padding:25px 0}.intro-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.metric{background:#fff;border:1px solid var(--line);padding:20px;border-radius:20px;text-align:center;box-shadow:0 10px 35px #13223808}.metric b{font:900 28px Manrope;display:block}
+.division{padding:65px 0 10px}.division-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:24px}.division-head small{font-weight:900;letter-spacing:1.3px}h2{font:900 clamp(30px,4vw,47px)/1.05 Manrope;letter-spacing:-1.8px;margin:6px 0 0}.view{font-weight:900;color:var(--blue)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:.25s;box-shadow:0 10px 35px #13223809}.product:hover{transform:translateY(-6px);box-shadow:0 20px 55px #13223817}
+.pic{height:205px;overflow:hidden;background:#e8edf3}.pic img{width:100%;height:100%;object-fit:cover;transition:.35s}.product:hover .pic img{transform:scale(1.07)}.pbody{padding:18px}.pbody span{font-size:9px;font-weight:900;letter-spacing:1px}.pbody h3{font:800 20px Manrope;margin:7px 0 11px}.pbody a{font-size:12px;font-weight:900;color:var(--blue)}
+.band{margin:75px 0 25px;border-radius:32px;padding:50px;background:linear-gradient(120deg,#122238,#2167ff);color:white;position:relative;overflow:hidden}.band:after{content:"";position:absolute;width:350px;height:350px;border-radius:50%;background:#ff6b2c55;right:-100px;top:-180px}.band>*{position:relative;z-index:2}.band h2{max-width:720px}.band p{max-width:700px;color:#dce7f8}
+footer{margin-top:65px;background:#0e1b2e;color:#aebcd0;padding:45px 0 25px}.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:35px}footer h3{color:#fff}footer a:hover{color:#fff}.copy{border-top:1px solid #ffffff16;margin-top:30px;padding-top:18px;font-size:12px;display:flex;justify-content:space-between}
+.float{position:fixed;right:18px;bottom:18px;background:#20c76a;color:#fff;padding:14px 19px;border-radius:999px;font-weight:900;box-shadow:0 15px 35px #20c76a55;z-index:80}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-img{height:350px}.grid{grid-template-columns:repeat(2,1fr)}.intro-grid{grid-template-columns:repeat(2,1fr)}.links{display:none}}
+@media(max-width:580px){.top .container span:first-child{display:none}.hero{padding:48px 0}h1{letter-spacing:-2px}.grid{grid-template-columns:1fr 1fr;gap:12px}.pic{height:160px}.pbody{padding:14px}.pbody h3{font-size:17px}.division{padding-top:48px}.division-head{align-items:start;flex-direction:column}.foot{grid-template-columns:1fr}.copy{flex-direction:column;gap:7px}}
+</style></head>
+<body>
+<div class="top"><div class="container"><span>Hyderabad • Construction • Infrastructure • Rentals</span><span>☎ <strong>9030601270</strong></span></div></div>
+<nav><div class="container navin"><a class="brand" href="#"><span class="logo">CI</span> CHANDER INFRA</a>
+<div class="links"><a href="#construction-materials">Materials</a><a href="#precast-products">Precast</a><a href="#infrastructure-products">Infrastructure</a><a href="#equipment-rentals">Rentals</a><a href="#outdoor-and-landscape">Outdoor</a><a href="#memorial-and-community-infrastructure">Memorial</a><a class="call" href="tel:9030601270">Call Now</a></div></div></nav>
+
+<header class="hero"><div class="container hero-grid"><div>
+<div class="eyebrow">Infrastructure. Materials. Solutions.</div><h1>Everything you need to <span class="gradient">build.</span></h1>
+<p>Chander Infra connects construction materials, precast products, infrastructure products, site solutions, equipment rentals, outdoor products and memorial/community infrastructure.</p>
+<div class="buttons"><a class="btn primary" href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20a%20quotation.">💬 WhatsApp Quote</a><a class="btn dark" href="tel:9030601270">☎ 9030601270</a><a class="btn white" href="#construction-materials">View all products ↓</a></div>
+</div><div class="hero-img"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1300&q=88" alt="Construction project"></div></div></header>
+
+<div class="intro"><div class="container intro-grid"><div class="metric"><b>06</b><span>Product Divisions</span></div><div class="metric"><b>30+</b><span>Product Lines</span></div><div class="metric"><b>1</b><span>Coordinated Supplier</span></div><div class="metric"><b>9030601270</b><span>Call / WhatsApp</span></div></div></div>
+
+<main class="container"><section class="division" id="construction-materials">
+      <div class="division-head"><div><small style="color:#ff6b2c">PRODUCT DIVISION</small><h2>Construction Materials</h2></div>
+      <a class="view" href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20a%20quotation.">Request quotation →</a></div>
+      <div class="grid"><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=700&q=82" alt="Cement"></div>
+          <div class="pbody"><span style="color:#ff6b2c">● CHANDER INFRA</span><h3>Cement</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Cement.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=700&q=82" alt="Steel"></div>
+          <div class="pbody"><span style="color:#ff6b2c">● CHANDER INFRA</span><h3>Steel</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Steel.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1516939884455-1445c8652f83?auto=format&fit=crop&w=700&q=82" alt="Sand"></div>
+          <div class="pbody"><span style="color:#ff6b2c">● CHANDER INFRA</span><h3>Sand</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Sand.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1590725140246-20acdee442be?auto=format&fit=crop&w=700&q=82" alt="Aggregates"></div>
+          <div class="pbody"><span style="color:#ff6b2c">● CHANDER INFRA</span><h3>Aggregates</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Aggregates.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=700&q=82" alt="Blocks"></div>
+          <div class="pbody"><span style="color:#ff6b2c">● CHANDER INFRA</span><h3>Blocks</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Blocks.">Enquire →</a></div>
+        </article></div>
+    </section><section class="division" id="precast-products">
+      <div class="division-head"><div><small style="color:#2167ff">PRODUCT DIVISION</small><h2>Precast Products</h2></div>
+      <a class="view" href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20a%20quotation.">Request quotation →</a></div>
+      <div class="grid"><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1590725175484-1a6f5f5b4b0a?auto=format&fit=crop&w=700&q=82" alt="Compound Walls"></div>
+          <div class="pbody"><span style="color:#2167ff">● CHANDER INFRA</span><h3>Compound Walls</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Compound%20Walls.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=700&q=82" alt="Pavers"></div>
+          <div class="pbody"><span style="color:#2167ff">● CHANDER INFRA</span><h3>Pavers</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Pavers.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1531835551805-16d864c8d311?auto=format&fit=crop&w=700&q=82" alt="Kerbs"></div>
+          <div class="pbody"><span style="color:#2167ff">● CHANDER INFRA</span><h3>Kerbs</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Kerbs.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=700&q=82" alt="Drains"></div>
+          <div class="pbody"><span style="color:#2167ff">● CHANDER INFRA</span><h3>Drains</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Drains.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=700&q=82" alt="Manholes"></div>
+          <div class="pbody"><span style="color:#2167ff">● CHANDER INFRA</span><h3>Manholes</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Manholes.">Enquire →</a></div>
+        </article></div>
+    </section><section class="division" id="infrastructure-products">
+      <div class="division-head"><div><small style="color:#19a974">PRODUCT DIVISION</small><h2>Infrastructure Products</h2></div>
+      <a class="view" href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20a%20quotation.">Request quotation →</a></div>
+      <div class="grid"><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1473445361085-b9a07f55608b?auto=format&fit=crop&w=700&q=82" alt="RCC Poles"></div>
+          <div class="pbody"><span style="color:#19a974">● CHANDER INFRA</span><h3>RCC Poles</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20RCC%20Poles.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=700&q=82" alt="Barriers"></div>
+          <div class="pbody"><span style="color:#19a974">● CHANDER INFRA</span><h3>Barriers</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Barriers.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1565623833408-d77e39b88af6?auto=format&fit=crop&w=700&q=82" alt="Benches"></div>
+          <div class="pbody"><span style="color:#19a974">● CHANDER INFRA</span><h3>Benches</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Benches.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=700&q=82" alt="Tree Guards"></div>
+          <div class="pbody"><span style="color:#19a974">● CHANDER INFRA</span><h3>Tree Guards</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Tree%20Guards.">Enquire →</a></div>
+        </article></div>
+    </section><section class="division" id="site-infrastructure">
+      <div class="division-head"><div><small style="color:#7b4dff">PRODUCT DIVISION</small><h2>Site Infrastructure</h2></div>
+      <a class="view" href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20a%20quotation.">Request quotation →</a></div>
+      <div class="grid"><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=700&q=82" alt="Cabins"></div>
+          <div class="pbody"><span style="color:#7b4dff">● CHANDER INFRA</span><h3>Cabins</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Cabins.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=700&q=82" alt="Fencing"></div>
+          <div class="pbody"><span style="color:#7b4dff">● CHANDER INFRA</span><h3>Fencing</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Fencing.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=700&q=82" alt="Temporary Structures"></div>
+          <div class="pbody"><span style="color:#7b4dff">● CHANDER INFRA</span><h3>Temporary Structures</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Temporary%20Structures.">Enquire →</a></div>
+        </article></div>
+    </section><section class="division" id="equipment-rentals">
+      <div class="division-head"><div><small style="color:#ef4f9b">PRODUCT DIVISION</small><h2>Equipment Rentals</h2></div>
+      <a class="view" href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20a%20quotation.">Request quotation →</a></div>
+      <div class="grid"><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=700&q=82" alt="Chairs"></div>
+          <div class="pbody"><span style="color:#ef4f9b">● CHANDER INFRA</span><h3>Chairs</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Chairs.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=700&q=82" alt="Tables"></div>
+          <div class="pbody"><span style="color:#ef4f9b">● CHANDER INFRA</span><h3>Tables</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Tables.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=700&q=82" alt="Tents"></div>
+          <div class="pbody"><span style="color:#ef4f9b">● CHANDER INFRA</span><h3>Tents</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Tents.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=700&q=82" alt="Stages"></div>
+          <div class="pbody"><span style="color:#ef4f9b">● CHANDER INFRA</span><h3>Stages</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Stages.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=700&q=82" alt="Barricades"></div>
+          <div class="pbody"><span style="color:#ef4f9b">● CHANDER INFRA</span><h3>Barricades</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Barricades.">Enquire →</a></div>
+        </article></div>
+    </section><section class="division" id="outdoor-and-landscape">
+      <div class="division-head"><div><small style="color:#16a6b7">PRODUCT DIVISION</small><h2>Outdoor & Landscape</h2></div>
+      <a class="view" href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20a%20quotation.">Request quotation →</a></div>
+      <div class="grid"><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=82" alt="Pavers"></div>
+          <div class="pbody"><span style="color:#16a6b7">● CHANDER INFRA</span><h3>Pavers</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Pavers.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=700&q=82" alt="Planters"></div>
+          <div class="pbody"><span style="color:#16a6b7">● CHANDER INFRA</span><h3>Planters</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Planters.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1598301257982-0cf014dabbcd?auto=format&fit=crop&w=700&q=82" alt="Benches"></div>
+          <div class="pbody"><span style="color:#16a6b7">● CHANDER INFRA</span><h3>Benches</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Benches.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1531835551805-16d864c8d311?auto=format&fit=crop&w=700&q=82" alt="Bollards"></div>
+          <div class="pbody"><span style="color:#16a6b7">● CHANDER INFRA</span><h3>Bollards</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Bollards.">Enquire →</a></div>
+        </article></div>
+    </section><section class="division" id="memorial-and-community-infrastructure">
+      <div class="division-head"><div><small style="color:#e2a900">PRODUCT DIVISION</small><h2>Memorial & Community Infrastructure</h2></div>
+      <a class="view" href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20a%20quotation.">Request quotation →</a></div>
+      <div class="grid"><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=700&q=82" alt="Memorials"></div>
+          <div class="pbody"><span style="color:#e2a900">● CHANDER INFRA</span><h3>Memorials</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Memorials.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=700&q=82" alt="Plaques"></div>
+          <div class="pbody"><span style="color:#e2a900">● CHANDER INFRA</span><h3>Plaques</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Plaques.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1565623833408-d77e39b88af6?auto=format&fit=crop&w=700&q=82" alt="Seating"></div>
+          <div class="pbody"><span style="color:#e2a900">● CHANDER INFRA</span><h3>Seating</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Seating.">Enquire →</a></div>
+        </article><article class="product">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=82" alt="Shelters"></div>
+          <div class="pbody"><span style="color:#e2a900">● CHANDER INFRA</span><h3>Shelters</h3>
+          <a href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20Shelters.">Enquire →</a></div>
+        </article></div>
+    </section>
+<div class="band"><div class="eyebrow" style="color:#ffc928">PROJECT ENQUIRY</div><h2>Need materials, products or rentals for your next project?</h2><p>Send your requirement, quantity and location. Chander Infra can coordinate supply, delivery and installation requirements.</p><div class="buttons"><a class="btn white" href="tel:9030601270">☎ Call 9030601270</a><a class="btn primary" href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20please%20share%20a%20quotation.">💬 Get WhatsApp Quote</a></div></div>
+</main>
+<footer><div class="container foot"><div><h3>CHANDER INFRA</h3><p>Infrastructure. Materials. Solutions.</p><p>Construction supplies, precast products, infrastructure, site solutions, rentals, outdoor products and community infrastructure.</p></div><div><h3>Products</h3><p><a href="#construction-materials">Construction Materials</a></p><p><a href="#precast-products">Precast Products</a></p><p><a href="#infrastructure-products">Infrastructure Products</a></p><p><a href="#equipment-rentals">Equipment Rentals</a></p></div><div><h3>Contact</h3><p>☎ <a href="tel:9030601270">9030601270</a></p><p>💬 <a href="https://wa.me/919030601270">WhatsApp Chander Infra</a></p><p>Hyderabad & Telangana</p></div></div><div class="container copy"><span>© 2026 Chander Infra</span><span>GitHub Pages Ready</span></div></footer>
+<a class="float" href="https://wa.me/919030601270?text=Hello%20Chander%20Infra%2C%20I%20need%20a%20quotation.">💬 WhatsApp</a>
+</body></html>
